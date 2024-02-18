@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+        }
+        header{
+            background-color: beige;
+            height: 120px;
+            width: auto;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        nav{
+            background-color: rgb(160, 132, 98);
+            text-align: right;
+            padding: 7px;
+            /*Deslocamento horizontal, deslocamento vertical, espalhamento da sombra, opacidade da sombra*/
+            box-shadow: 2px 3px 4px 1px black;
+
+        }
+        nav>a{
+            color: black;
+            background-color: rgb(180, 169, 116);
+            font-size: 15px;
+            margin: 5px;
+        }
+        main{
+            background-color: rgb(196, 195, 195);
+            width: 2000px;
+            height: auto;
+            margin: auto;
+            border-radius: 20px 0px;
+
+        }
+        footer{
+            background-color: rgb(255, 158, 158);
+            text-align: center;
+            
+        }
+        article>h2{
+            text-align: left;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        article>p{
+            text-indent: 10px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        aside{
+            text-align: right;
+            margin-right: 20px;
+        }
+        article>#invisivel{
+            display: none;
+        }
+        article>#invisivel:hover{
+            display: block;
+            background-color: greenyellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem labore necessitatibus nulla atque debi tis quibusdam fugiat repellat quas doloremque est reprehenderit, laborum ex tempore earum esse adipisci iusto nam fuga!
+                </p>
+                <h2>Abaixo existe um texto invísivel</h2>
+                <p id="invisivel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto ut asperiores in tempora quasi ullam nulla cum corrupti blanditiis? Veniam quas minus dignissimos, praesentium excepturi architecto nesciunt debitis totam.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>    
+            </article>
+            <article>
+
+            </article> 
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo João</p>
+    </footer>
+</body>
+</html>
